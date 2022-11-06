@@ -1,0 +1,354 @@
+ .header-cite {
+  & {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(134, 124, 199, 0.1)
+  }
+
+  &__block {
+    max-width: 100%;
+  }
+
+  &__logo-block {
+    max-width: 177px;
+  }
+
+  &__top {
+    background-color: #F9F8F8;
+  }
+
+  &__topcon {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
+
+  &__adres-block {
+    max-width: 241px;
+    margin-left: 15px;
+    @include flex;
+    margin-left: auto;
+  }
+
+  &__adres {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    letter-spacing: 0.55px;
+  }
+
+  &__adres-block::before {
+    content: "";
+    width: 14px;
+    height: 13px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../../img/house.svg");
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+    margin-right: 9px;
+  }
+
+  &__tel1 {
+    @include flex;
+    max-width: 129px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    margin-left: 117px;
+    letter-spacing: 0.55px;
+  }
+
+  &__tel1::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../../img/phone.svg");
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+    margin-right: 9px;
+  }
+
+  &__tel2 {
+    @include flex;
+    max-width: 129px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    margin-left: 9px;
+    letter-spacing: 0.55px;
+  }
+
+  &__tel2::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #FFBD54;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 9px;
+  }
+
+  &__time1 {
+    max-width: 141px;
+    cursor: pointer;
+    @include flex;
+    margin-left: 17px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    margin-left: 108px;
+
+    letter-spacing: 0.55px;
+  }
+
+  &__time1::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../../img/headr.svg");
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+    margin-right: 9px;
+  }
+
+  &__time2 {
+    cursor: pointer;
+    margin-left: 17px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    letter-spacing: 0.55px;
+  }
+
+  &__bottom {
+    @include flex;
+  }
+
+  &__navbar {
+    width: 100%;
+    @include flex;
+  }
+
+  &__list {
+    @include flex;
+    margin-left: auto;
+  }
+
+  &__list::before {
+    content: "";
+    width: 19.75px;
+    height: 19.75px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../../img/baliq.svg");
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+    margin-right: 12px;
+  }
+
+  &__item+&__item {
+    margin-left: 60px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    letter-spacing: 0.55px;
+  }
+
+  &__link-vobros {
+    @include flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    margin-left: 166px;
+    letter-spacing: 0.55px;
+  }
+
+  &__link-vobros::before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../../img/zapros.svg");
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+    margin-right: 4px;
+  }
+  &__bgim1{
+      display: none;
+  }
+  &__timebg{
+    display: none;  
+  }
+  &__navbg{
+    display: none;
+  }
+  &__tel3{
+    display: none;  
+  }
+}
+@media only screen and (max-width:1225px){
+  .header-cite{
+    &__link-vobros{
+    margin-left: 30px;
+    }
+    &__adres-block::before {
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+    }
+
+    &__tel1{
+      margin-left: 30px;
+    }
+    &__time1{
+      margin-left: 30px;
+    }
+    &__item+&__item {
+      margin-left: 30px;
+    }
+  }
+}
+@media only screen and (max-width:1010px){
+  .header-cite{
+    &__adres{
+      display: none;
+    }
+    
+  }
+}
+@media only screen and (max-width:930px){
+  .header-cite{
+    &__link-vobros{
+      display: none;
+    }
+    &__bgim1{
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../../img/zapros.svg");
+      flex-shrink: 0;
+      background-position: center;
+      background-size: cover;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    
+
+  }
+}
+
+@media only screen and (max-width:840px){
+  .header-cite{
+    &__time1{
+      display: none;
+    }
+    &__time2{
+      display: none;
+    }
+    &__timebg{
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../../img/headr.svg");
+      flex-shrink: 0;
+      background-position: center;
+      background-size: cover;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    &__item+&__item {
+      margin-left: 10px;
+    }
+    &__logo-block{
+      max-width: 130px;
+    }
+  }
+}
+@media only screen and (max-width:710px){
+  .header-cite{
+    &__list{
+      display: none;
+    }
+    &__navbg{
+      width: 40px;
+      height: 30px;
+      margin-left: auto;
+      background-image: url('../../img/header-list.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: inline-block;
+      cursor: pointer;
+    }
+    &__bgim1{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width:555px){
+  .header-cite{
+    &__tel1{
+      display: none;
+    }
+    &__tel2{
+      display: none;
+    }
+    &__tel3{
+      content: "";
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url("../../img/phone.svg");
+      flex-shrink: 0;
+      background-position: center;
+      background-size: cover;
+      margin-left: 9px;
+      cursor: pointer;
+
+    }
+    &__adres-block::before {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    &__logo-block{
+      max-width: 100px;
+      cursor: pointer;
+    }
+    &__navbg{
+      width: 30px;
+      height: 25px;
+      
+    }
+   
+  }
+}

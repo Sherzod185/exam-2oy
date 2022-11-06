@@ -1,0 +1,269 @@
+.sobaka {
+  & {
+    margin-bottom: 240px;
+  }
+
+  &__blockk {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+  }
+
+  &__title {
+    max-width: 384px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 20px;
+    letter-spacing: $font;
+    color: #333333;
+    margin-bottom: 80px;
+  }
+
+  &__block1 {
+    width: 305px;
+    background: #FEFEFE;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__text-block {
+    padding: 21px 31px 35px 25px;
+  }
+
+  &__img1 {
+    max-width: 100%;
+  }
+
+  &__sana {
+    width: 71px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: auto;
+    color: #949494;
+    margin-bottom: 2px;
+  }
+
+  &__title1 {
+    max-width: 182px;
+    letter-spacing: $font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  &__text1 {
+    max-width: 244px;
+    letter-spacing: $font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    margin-bottom: 34px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link::before {
+    content: "";
+    width: 35px;
+    height: 22px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../../img/zapros.svg");
+    flex-shrink: 0;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__img2 {
+    width: 305px;
+    border-radius: 5px 0px 0px 5px;
+  }
+
+  &__block2 {
+    background: #FEFEFE;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__text-block2 {
+    width: 305px;
+    padding: 24px 30px 22px 30px;
+    background: #FEFEFE;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__textcha {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: $font;
+    color: #3D9CEA;
+  }
+
+  &__sana-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__title2 {
+    max-width: 193px;
+    letter-spacing: $font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+
+  &__text2 {
+    max-width: 270px;
+    letter-spacing: $font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    margin-bottom: 33px;
+  }
+
+  &__block3 {
+    width: 305px;
+    background: #FEFEFE;
+    border: 1px solid #E4E4E2;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__text-block3 {
+    padding: 18px 31px 28px 25px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__img3 {
+    max-width: 100%;
+    margin-bottom: 19px;
+  }
+
+  &__title3 {
+    max-width: 182px;
+    letter-spacing: $font;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  &__text3 {
+    max-width: 244px;
+    letter-spacing: $font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+    margin-bottom: 34px;
+  }
+
+}
+@media only screen and (max-width:1334px){
+  .sobaka{
+    &__block2{
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width:1002px){
+  .sobaka{
+    &__block2{
+      display: block;
+    }
+  }
+}
+@media only screen and (max-width:680px){
+  .sobaka{
+    &{
+      margin-bottom: 200px;
+    }
+    &__block3{
+      width: 500px;
+    }
+    &__text-block2{
+      width: 500px;
+    }
+    &__img2{
+      width: 500px;
+    }
+    &__block1{
+      width: 500px;
+    }
+  }
+}
+@media only screen and (max-width:500px){
+  .sobaka{
+    &{
+      margin-bottom: 170px;
+    }
+    &__block3{
+      width: 450px;
+    }
+    &__text-block2{
+      width: 450px;
+    }
+    &__img2{
+      width: 450px;
+    }
+    &__block1{
+      width: 450px;
+    }
+  }
+}
+@media only screen and (max-width:420px){
+  .sobaka{
+    &{
+      margin-bottom: 120px;
+    }
+    &__block3{
+      width: 300px;
+    }
+    &__text-block2{
+      width: 300px;
+    }
+  &__img2{
+    width: 300px;
+  }
+    &__block1{
+      width: 300px;
+    }
+    &__title {
+      max-width: 260px;
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+  

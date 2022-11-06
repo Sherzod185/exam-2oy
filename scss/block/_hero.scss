@@ -1,0 +1,167 @@
+.hero{
+  &{
+    max-width: 1450px;
+    margin-top: 116.2px;
+    padding-top:145px ;
+    padding-bottom: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    background-image: url("../../img/hero1.webp"), url("../../img/hero2.webp");
+    background-position: 0 -95px, right bottom;
+    background-size: 620px,  210px;
+  }
+  &__text-block{
+    max-width: 608px;
+    margin-left: auto;
+  }
+  &__title{
+    font-weight: 700;
+font-size: 70px;
+line-height: 64px;
+color: #333333;
+letter-spacing: $font;
+margin-bottom: 30px;
+  }
+  &__title-blu{
+    color:#78C0DE;
+  }
+  &__text{
+    max-width: 495px;
+    letter-spacing: $font;
+    font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #949494;
+margin-bottom: 38px;
+  }
+  &__link{
+    letter-spacing: $font;
+    font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+padding: 15px 47px;
+background: #333333;
+border-radius: 3px;
+  }
+}
+@media only screen and (max-width:1220px){
+  .hero{
+    &{
+      background-size: 500px,  180px;
+      padding-bottom: 240px;
+    }
+  }
+}
+@media only screen and (max-width:1100px){
+  .hero{
+    &{
+      background-position: 0 -55px, right bottom 50px;
+      background-size: 400px,  150px;
+      padding-bottom: 180px;
+    }
+  }
+}
+@media only screen and (max-width:1000px){
+  .hero{
+    &{
+      background-position: 0 -25px, right bottom 60px;
+      background-size: 350px,  150px;
+      padding-bottom: 150px;
+    }
+    
+  }
+}
+@media only screen and (max-width:960px){
+  .hero{
+    &{
+      margin-top: 90px;
+      background-position: 0 0, right bottom 60px;
+      background-size: 0,  150px;
+      padding-bottom: 150px;
+    }
+    &__text-block{
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+  }
+}
+@media only screen and (max-width:630px){
+  .hero{
+    &{
+      margin-top: 0;
+      background-position: 0 0, right bottom -50px;
+      background-size: 0,  130px;
+      padding-bottom: 100px;
+    }
+    &__title{
+      font-weight: 700;
+  font-size: 60px;
+  line-height: 64px;
+  margin-bottom: 22px;
+    }
+    &__text{
+      max-width: 450px;
+      letter-spacing: $font;
+      font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 25px;
+    }
+}
+}
+@media only screen and (max-width:500px){
+  .hero{
+    &__title{
+      font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 22px;
+    }
+    &__text{
+      max-width: 380px;
+      letter-spacing: $font;
+      font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 25px;
+    }
+  }
+}
+@media only screen and (max-width:410px){
+  .hero{
+    &__title{
+      font-weight: 700;
+  font-size: 40px;
+  line-height: 64px;
+  margin-bottom: 22px;
+    }
+    &__text{
+      max-width: 340px;
+      letter-spacing: $font;
+      font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 25px;
+    }
+    &{
+      margin-top: 0;
+      background-position: 0 0, right bottom -55px;
+      background-size: 0,  100px;
+      padding-bottom: 80px;
+    }
+  }
+}
+@media only screen and (max-width:360px){
+  .hero{
+    &__title{
+      font-weight: 700;
+  font-size: 37px;
+  line-height: 45px;
+  margin-bottom: 22px;
+    } 
+    &__text{
+      max-width: 320px;
+  font-size: 11px;
+    }
+  }
+}

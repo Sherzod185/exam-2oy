@@ -1,0 +1,141 @@
+.svyaz{
+  &{
+    max-width: 1496px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-image: url("../../img/svyaz.jpg");
+    background-size: cover;
+    background-position:  center;
+    margin-bottom: 240px;
+    display: flex;
+    align-items: center;
+  
+  }
+  &__iframe{
+    position: relative;
+    margin-left:auto;
+  }
+  &__block{
+    margin-left: 150px;
+  }
+
+  &__title{
+    max-width: 360px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+    letter-spacing: $font;
+  }
+  &__text{
+    max-width: 339px;
+    letter-spacing: $font;
+    margin-bottom: 29px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #949494;
+  }
+  &__input1{
+    width: 375px;
+    padding: 15px 22px 14px 22px;
+    margin-bottom: 14px;
+    display: block;
+    background: #FFFFFF;
+border-radius: 2px;
+  }
+  &__input1::placeholder{
+    font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+letter-spacing: $font;
+color: #949494;
+  }
+  &__area{
+    padding: 17px 22px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #949494;
+letter-spacing: $font;
+display: block;
+margin-bottom: 30px;
+border-radius: 2px;
+  }
+  &__btn{
+    border: none;
+    padding: 15px 49px;
+    font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+letter-spacing: $font;
+background: #FFBD54;
+border-radius: 2px;
+color: #FFFFFF;
+  }
+  &__ifrem2{
+    display: none;
+  }
+}
+@media only screen and (max-width:1080px){
+  .svyaz{
+    &__block{
+      margin-left: 20px;
+    }
+   
+  }
+}
+@media only screen and (max-width:1000px){
+  .svyaz{
+    &__block{
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 50px;
+    }
+    &__ifrem1{
+      display: none;
+    }
+    &__ifrem2{
+      display: block;
+    }
+    &__btn{
+      margin-bottom: 80px;
+    }
+    &__container{
+      display: flex;
+      align-items: center;
+    }
+   
+  }
+}
+@media only screen and (max-width:750px){
+  .svyaz{
+    &__container{
+      flex-direction: column;
+    }
+    &{
+      margin-bottom: 180px;
+    }
+  }
+}
+@media only screen and (max-width:440px){
+  .svyaz{
+    &__input1{
+width: 270px;
+    }
+    &__area{
+      width: 270px;
+    }
+    &__title{
+      max-width: 270px;
+      font-size: 35px;
+    }
+    &__text{
+      max-width: 270px;
+      font-size: 10px;
+    }
+  }
+}
